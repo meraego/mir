@@ -64,9 +64,9 @@
 
     <scriptfile>script.php</scriptfile>
 
-    <update>/localhost/com_mir/mir.xml</update>
+    <update>https://github.com/mir-org-ua/mir/blob/master/mir.xml</update>
     <updateservers>
-        <server type="extension" priority="1" name="MIR">/localhost/com_mir/mir.xml</server>
+        <server type="extension" priority="1" name="MIR">https://github.com/mir-org-ua/mir/blob/master/mir.xml</server>
     </updateservers>
 
 </extension>
