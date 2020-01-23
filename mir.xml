@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>COM_MIR</name>
+    <author>meraego</author>
+    <creationDate>01.01.2020</creationDate>
+    <authorEmail>meraego@gmail.com</authorEmail>
+    <authorUrl>http://mir.org.ua</authorUrl>
+    <copyright>Copyright (C) 2020 Ukraine</copyright>
+    <license>GNU/GPL, http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <version>0.0.3</version>
+    <description>MIR - place of project</description>
+
+    <files folder="site">
+        <filename>mir.php </filename>
+        <filename>index.html</filename>
+        <filename>router.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+
+    <languages folder="languages/site">
+        <language tag="en-GB">en-GB.com_mir.ini</language>
+        <language tag="uk-UA">uk-UA.com_mir.ini</language>        
+    </languages>
+
+    <media folder="media" destination="mir">
+        <folder>js</folder>
+        <folder>images</folder>
+    </media>
+
+    <administration>
+        <menu link="option=com_mir">COM_MIR</menu>
+        <submenu>
+            <menu link="option=com_mir&amp;controller=idea">COM_MIR_IDEA</menu>
+            <menu link="option=com_mir&amp;controller=duma">COM_MIR_DUMA</menu>
+            <menu link="option=com_mir&amp;controller=vote">COM_MIR_VOTE</menu>
+            <menu link="option=com_mir&amp;controller=zgoda">COM_MIR_ZGODA</menu>
+            <menu link="option=com_mir&amp;controller=plan">COM_MIR_PLAN</menu>
+            <menu link="option=com_mir&amp;controller=dii">COM_MIR_DII</menu>
+            <menu link="option=com_mir&amp;controller=sud">COM_MIR_SUD</menu>            
+        </submenu>
+
+        <files folder="admin">
+            <filename>config.xml</filename>
+            <filename>index.html</filename>
+            <filename>toolbar.php</filename>
+            <filename>mir.php</filename>
+            <folder>assets</folder>
+            <folder>elements</folder>
+            <folder>models</folder>
+            <folder>mvc</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+
+        <languages folder="languages/admin">
+            <language tag="en-GB">en-GB.com_mir.ini</language>
+            <language tag="en-GB">en-GB.com_mir.sys.ini</language>
+            <language tag="uk-UA">uk-UA.com_mir.ini</language>        
+            <language tag="uk-UA">uk-UA.com_mir.sys.ini</language>
+        </languages>
+
+    </administration>
+
+    <scriptfile>script.php</scriptfile>
+
+    <update>/localhost/com_mir/mir.xml</update>
+    <updateservers>
+        <server type="extension" priority="1" name="MIR">/localhost/com_mir/mir.xml</server>
+    </updateservers>
+
+</extension>
