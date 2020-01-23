@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.0" group="search" method="upgrade">
+	<name>Search - Idei</name>
+	<author>Denys Nosov</author>
+	<creationDate>15.05.2017</creationDate>
+	<copyright>Copyright (C) 2016-2017 Joomla! Ukraine</copyright>
+	<license>GNU GPL</license>
+	<authorEmail>denys@joomla-ua.org</authorEmail>
+	<authorUrl>http://joomla-ua.org</authorUrl>
+	<version>2.0.0</version>
+	<description>Search plugin for JUIdei</description>
+	<files>
+		<filename plugin="plg_mirsearch">plg_mirsearch.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field
+						name="search_limit"
+						type="text"
+						size="5"
+						default="50"
+						label="Search Limit"
+						description="Number of Search items to return"
+				/>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

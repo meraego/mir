@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>Idei</name>
+    <author>Denys Nosov</author>
+    <creationDate>15.05.2016</creationDate>
+    <authorEmail>denys@joomla-ua.org</authorEmail>
+    <authorUrl>http://oomla-ua.org</authorUrl>
+    <copyright>Copyright (C) 2016-2017 Joomla! Ukraine</copyright>
+    <license>GNU/GPL, http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <version>2.0.0</version>
+    <description>JUIdei is a simple and flexible component for voting.</description>
+
+    <files>
+        <filename module="mod_mir">mod_mir.php</filename>
+        <filename module="mod_mir">index.html</filename>
+        <filename module="mod_mir">helper.php</filename>
+        <folder module="mod_mir">tmpl</folder>
+    </files>
+
+    <languages folder="languages">
+        <language tag="en-GB">en-GB.mod_mir.ini</language>
+        <language tag="uk-UA">uk-UA.mod_mir.ini</language>
+        <language tag="ru-RU">ru-RU.mod_mir.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field name="cache" type="hidden" default="0"/>
+
+                <field
+                        name="moduleclass_sfx"
+                        type="text"
+                        default=""
+                        label="Module Class Suffix"
+                        description="PARAMMODULECLASSSUFFIX"
+                />
+
+                <field type="spacer"/>
+
+                <field
+                        name="id"
+                        type="text"
+                        default=""
+                        label="MOD_MIR_IDEA_ID"
+                        description="MOD_MIR_IDEA_ID_DESC"
+                />
+
+                <field
+                        name="show_IDEA_title"
+                        type="radio"
+                        class="btn-group"
+                        default="1"
+                        label="MOD_MIR_SHOW_IDEA_TITLE"
+                        description="MOD_MIR_SHOW_IDEA_TITLE_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+
+                <field type="spacer"/>
+
+                <field
+                        name="show_view_details"
+                        type="radio"
+                        class="btn-group"
+                        default="1"
+                        label="MOD_MIR_SHOW_VIEW_DETAILS"
+                        description="MOD_MIR_SHOW_VIEW_DETAILS_DESC"
+                >
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+
+                <field
+                        name="show_rel_article"
+                        type="radio"
+                        class="btn-group"
+                        default="1"
+                        label="MOD_MIR_SHOW_REL_ARTICLE"
+                        description="MOD_MIR_SHOW_REL_ARTICLE_DESC"
+                >
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+
+                <field
+                        name="rel_article"
+                        type="text"
+                        default=""
+                        size="40"
+                        label="MOD_MIR_RELATED_ARTICLE_LINK"
+                        description="MOD_MIR_RELATED_ARTICLE_LINK_DESC"
+                />
+
+                <field
+                        name="rel_article_window"
+                        type="radio"
+                        class="btn-group"
+                        default="_self"
+                        label="MOD_MIR_IN_NEW_WINDOW"
+                        description="MOD_MIR_IN_NEW_WINDOW_DESC"
+                >
+                    <option value="_blank">Yes</option>
+                    <option value="_self">No</option>
+                </field>
+
+                <field type="spacer"/>
+
+                <field
+                        name="show_total"
+                        type="radio"
+                        class="btn-group"
+                        default="1"
+                        label="MOD_MIR_SHOW_TOTAL"
+                        description="MOD_MIR_SHOW_TOTAL_DESC"
+                >
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+
+                <field
+                        name="show_msg"
+                        type="radio"
+                        class="btn-group"
+                        default="1"
+                        label="MOD_MIR_SHOW_MESSAGES"
+                        description="MOD_MIR_SHOW_MESSAGES_DESC"
+                >
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+
+                <field
+                        name="show_detailed_msg"
+                        type="radio"
+                        class="btn-group"
+                        default="1"
+                        label="MOD_MIR_SHOW_DETAILED_MESSAGES"
+                        description="MOD_MIR_SHOW_DETAILED_MESSAGES_DESC"
+                >
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+
+                <field
+                        name="msg_date_format"
+                        type="text"
+                        default="F j, Y"
+                        size="25"
+                        label="MOD_MIR_MSG_DATE_FORMAT"
+                        description="MOD_MIR_MSG_DATE_FORMAT_DESC"
+                />
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>
