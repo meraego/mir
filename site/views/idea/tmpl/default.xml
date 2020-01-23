@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Single Idea">
+		<message>
+			<![CDATA[This layout will display a single idea.]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field name="id" type="text" label="COM_MIR_MENU_IDEA_ID" required="true" description="COM_MIR_MENU_IDEA_ID_DESC"	/>
+		</fieldset>
+	</fields>
+	<state>
+		<name>Single Idea Layout</name>
+		<description>STANDARD idea LAYOUT DESC</description>
+		<url addpath="/administrator/components/com_mir/elements">
+			<param name="id" type="idea" default="0" label="COM_MIR_idea" description="Select idea" />
+		</url>
+		<params />
+
+	</state>
+</metadata>
